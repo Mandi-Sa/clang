@@ -6,7 +6,7 @@
 ### amd64-kernel-arm
 - 此分支的工具链针对AArch32、AArch64 和x86架构，运行于x86-64架构的主机，主要用于内核编译。
 - 此分支的工具链不适用于裸机开发以外的任何东西，它在构建时并未考虑到对任何libc或用户空间开发的支持。
-- 此分支的工具链使用基于glibc 2.31的Ubuntu 20.04 LTS构建，无法保证比该版本更旧的发行版的兼容性。不支持其他 libc 实现（例如 musl）。
+- 此分支的工具链使用基于glibc 2.35的Ubuntu 22.04 LTS构建，无法保证比该版本更旧的发行版的兼容性。不支持其他 libc 实现（例如 musl）。
 
 #### 目录结构
 	amd64-kernel-arm/
@@ -39,28 +39,6 @@
 		s390x-linux-gnu/
 		share/
 		x86_64-pc-linux-gnu/
-
-### arm64-full-toolchain
-- 此分支的工具链是一个完整LLVM项目的预构建，运行于AArch64架构的主机。
-- 此分支的工具链使用基于glibc 2.35的Ubuntu 22.04 LTS构建，无法保证比该版本更旧的发行版的兼容性。不支持其他 libc 实现（例如 musl）。
-
-#### 目录结构
-	amd64-full-toolchain/
-		aarch64-unknown-linux-gnu/
-		arm-linux-gnueabi/
-		bin/
-		include/
-		lib/
-		libexec/
-		mipsel-linux-gnu/
-		mips-linux-gnu/
-		powerpc64le-linux-gnu/
-		powerpc64-linux-gnu/
-		powerpc-linux-gnu/
-		riscv64-linux-gnu/
-		s390x-linux-gnu/
-		share/
-		x86_64-linux-gnu/
 
 ## 仓库地址
 [GitHub](https://github.com/Mandi-Sa/clang "GitHub")：仅用于发布预构建的压缩文件（\*.7z）
