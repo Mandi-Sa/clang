@@ -8,6 +8,19 @@
 - 此分支的工具链不适用于裸机开发以外的任何东西，它在构建时并未考虑到对任何libc或用户空间开发的支持。
 - 此分支的工具链使用基于glibc 2.35的Ubuntu 22.04 LTS构建，无法保证比该版本更旧的发行版的兼容性。不支持其他 libc 实现（例如 musl）。
 
+#### 支持的目标架构
+    aarch64    - AArch64 (little endian)
+    aarch64_32 - AArch64 (little endian ILP32)
+    aarch64_be - AArch64 (big endian)
+    arm        - ARM
+    arm64      - ARM64 (little endian)
+    arm64_32   - ARM64 (little endian ILP32)
+    armeb      - ARM (big endian)
+    thumb      - Thumb
+    thumbeb    - Thumb (big endian)
+    x86        - 32-bit X86: Pentium-Pro and above
+    x86-64     - 64-bit X86: EM64T and AMD64
+
 #### 目录结构
 	amd64-kernel-arm/
 		aarch64-linux-gnu/
@@ -22,20 +35,60 @@
 - 此分支的工具链是一个完整LLVM项目的预构建，运行于x86-64架构的主机。
 - 此分支的工具链使用基于glibc 2.35的Ubuntu 22.04 LTS构建，无法保证比该版本更旧的发行版的兼容性。不支持其他 libc 实现（例如 musl）。
 
+#### 支持的目标架构
+    aarch64    - AArch64 (little endian)
+    aarch64_32 - AArch64 (little endian ILP32)
+    aarch64_be - AArch64 (big endian)
+    amdgcn     - AMD GCN GPUs
+    arm        - ARM
+    arm64      - ARM64 (little endian)
+    arm64_32   - ARM64 (little endian ILP32)
+    armeb      - ARM (big endian)
+    avr        - Atmel AVR Microcontroller
+    bpf        - BPF (host endian)
+    bpfeb      - BPF (big endian)
+    bpfel      - BPF (little endian)
+    hexagon    - Hexagon
+    lanai      - Lanai
+    mips       - MIPS (32-bit big endian)
+    mips64     - MIPS (64-bit big endian)
+    mips64el   - MIPS (64-bit little endian)
+    mipsel     - MIPS (32-bit little endian)
+    msp430     - MSP430 [experimental]
+    nvptx      - NVIDIA PTX 32-bit
+    nvptx64    - NVIDIA PTX 64-bit
+    ppc32      - PowerPC 32
+    ppc32le    - PowerPC 32 LE
+    ppc64      - PowerPC 64
+    ppc64le    - PowerPC 64 LE
+    r600       - AMD GPUs HD2XXX-HD6XXX
+    riscv32    - 32-bit RISC-V
+    riscv64    - 64-bit RISC-V
+    sparc      - Sparc
+    sparcel    - Sparc LE
+    sparcv9    - Sparc V9
+    systemz    - SystemZ
+    thumb      - Thumb
+    thumbeb    - Thumb (big endian)
+    ve         - VE
+    wasm32     - WebAssembly 32-bit
+    wasm64     - WebAssembly 64-bit
+    x86        - 32-bit X86: Pentium-Pro and above
+    x86-64     - 64-bit X86: EM64T and AMD64
+    xcore      - XCore
+
 #### 目录结构
 	amd64-full-toolchain/
 		aarch64-linux-gnu/
 		arm-linux-gnueabi/
 		bin/
+		etc/
 		include/
 		lib/
 		libexec/
-		mipsel-linux-gnu/
-		mips-linux-gnu/
 		powerpc64le-linux-gnu/
 		powerpc64-linux-gnu/
 		powerpc-linux-gnu/
-		riscv64-linux-gnu/
 		s390x-linux-gnu/
 		share/
 		x86_64-pc-linux-gnu/
