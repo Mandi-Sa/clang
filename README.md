@@ -96,4 +96,4 @@
 ## 仓库地址
 [GitHub](https://github.com/Mandi-Sa/clang "GitHub")：仅用于发布预构建的压缩文件（\*.7z）
 
-[Gitea](https://gitea.com/Mandi-Sa/clang "Gitea")：仅用于存储预构建的二进制文件（Current AR Archive、ELF 64-bit LSB shared object存储在LFS）
+[Codeberg](https://codeberg.org/Mandi-Sa/clang "Codeberg")：仅用于存储预构建的二进制文件（Current AR Archive、ELF 64-bit LSB shared object存储在LFS）
