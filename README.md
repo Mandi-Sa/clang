@@ -227,3 +227,78 @@
 		share/
 		x86_64-pc-linux-gnu/
 
+### amd64-full-toolchain_static
+- 此分支的工具链是一个完整LLVM项目的预构建，运行于x86-64架构的主机。
+- 此分支的工具链使用基于glibc 2.35的Ubuntu 22.04 LTS构建，二进制文件采用静态链接。
+
+#### 支持的目标架构
+    aarch64     - AArch64 (little endian)
+    aarch64_32  - AArch64 (little endian ILP32)
+    aarch64_be  - AArch64 (big endian)
+    amdgcn      - legacy name for amdgpu
+    amdgpu      - AMDGPU gfx6+
+    arm         - ARM
+    arm64       - ARM64 (little endian)
+    arm64_32    - ARM64 (little endian ILP32)
+    armeb       - ARM (big endian)
+    avr         - Atmel AVR Microcontroller
+    bpf         - BPF (host endian)
+    bpfeb       - BPF (big endian)
+    bpfel       - BPF (little endian)
+    dxil        - DirectX Intermediate Language
+    hexagon     - Hexagon
+    lanai       - Lanai
+    loongarch32 - 32-bit LoongArch
+    loongarch64 - 64-bit LoongArch
+    mips        - MIPS (32-bit big endian)
+    mips64      - MIPS (64-bit big endian)
+    mips64el    - MIPS (64-bit little endian)
+    mipsel      - MIPS (32-bit little endian)
+    msp430      - MSP430 [experimental]
+    nvptx       - NVIDIA PTX 32-bit
+    nvptx64     - NVIDIA PTX 64-bit
+    ppc32       - PowerPC 32
+    ppc32le     - PowerPC 32 LE
+    ppc64       - PowerPC 64
+    ppc64le     - PowerPC 64 LE
+    r600        - AMD GPUs HD2XXX-HD6XXX
+    riscv32     - 32-bit RISC-V
+    riscv32be   - 32-bit big endian RISC-V
+    riscv64     - 64-bit RISC-V
+    riscv64be   - 64-bit big endian RISC-V
+    sparc       - Sparc
+    sparcel     - Sparc LE
+    sparcv9     - Sparc V9
+    spirv       - SPIR-V Logical
+    spirv32     - SPIR-V 32-bit
+    spirv64     - SPIR-V 64-bit
+    systemz     - SystemZ
+    thumb       - Thumb
+    thumbeb     - Thumb (big endian)
+    ve          - VE
+    wasm32      - WebAssembly 32-bit
+    wasm64      - WebAssembly 64-bit
+    x86         - 32-bit X86: Pentium-Pro and above
+    x86-64      - 64-bit X86: EM64T and AMD64
+    xcore       - XCore
+
+#### 目录结构
+	amd64-full-toolchain_static/
+		aarch64-linux-gnu/
+		arm-linux-gnueabi/
+		bin/
+		include/
+		lib/
+		libexec/
+		loongarch64-linux-gnu/
+		mips-linux-gnu/
+		mipsel-linux-gnu/
+		powerpc-linux-gnu/
+		powerpc64-linux-gnu/
+		powerpc64le-linux-gnu/
+		riscv64-linux-gnu/
+		s390x-linux-gnu/
+		share/
+		sparc64-linux-gnu/
+		x86_64-pc-linux-gnu/
+
